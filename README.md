@@ -1,161 +1,200 @@
-# Coffee-sales
-This repository contains an exploratory data analysis (EDA) project focused on coffee shop sales data. The objective of the project is to analyze sales performance, understand customer purchasing patterns, and extract meaningful business insights using Python data analysis libraries.
+# ☕ Coffee Shop Sales – End-to-End Data Analyst Project
 
+## 📌 Project Overview
 
-## Problem Statement
+This project is a complete **end-to-end data analytics solution** focused on analyzing coffee shop sales data to derive **actionable business insights**. The goal was to transform raw transactional data into meaningful dashboards and insights that support **data-driven decision-making**.
 
-The coffee shop has a large volume of sales transaction data, but there is no clear visibility into sales performance, trends, and patterns.
-The objective of this analysis is to transform raw transactional data into actionable insights that support better business and operational decisions.
+The project demonstrates real-world **Data Analyst skills** using **Python, SQL, Advanced Excel, and Power BI**, covering the full analytics lifecycle from data cleaning to executive-level reporting.
 
+---
 
-## 🎯 Project Objectives
+## 🎯 Business Problem
 
-The analysis aims to understand: Overall sales behavior and performance
+The coffee shop had large volumes of transactional data but lacked clarity on:
 
-Product-wise and time-based sales patterns
+* Overall sales performance and revenue trends
+* Daily, weekly, and monthly sales patterns
+* Product category and product-level performance
+* Weekday vs weekend sales behavior
+* Store-level performance comparison
 
-Key trends that can help improve decision-making related to products, timing, and operations
+This project was designed to solve these challenges and provide clear insights for business stakeholders.
 
-## 📂 Dataset Overview
+---
 
- Total Records: 149,116 transactions
+## 🗂 Dataset Details
 
-Data Type: Large-scale transactional sales data
+* **Source:** Coffee shop sales transaction data (CSV)
+* **Total Records:** ~149,000+
+* **Data Types:**
 
-Variables Included:
+  * Numeric: Sales amount, quantity sold
+  * Categorical: Product category, product type, store location
+  * Datetime: Transaction date and time
 
- Numeric Variables: Sales amount, quantity sold, revenue-related fields
+The dataset is well-suited for time-series analysis, aggregation, and business intelligence reporting.
 
- Categorical Variables: Product category, product type, date & time attributes
+---
 
-The dataset size is sufficient to perform reliable and meaningful trend analysis
+## 🛠 Tools & Technologies
 
+* **Python:** Pandas, NumPy, Matplotlib, Seaborn
+* **SQL:** Aggregations, filtering, ranking analysis
+* **Excel:** Pivot Tables, formulas, business summaries
+* **Power BI:** Data modeling, DAX, interactive dashboards
 
-Coffee Shop Sales Dashboard
-(Power BI visualization showcasing KPIs, trends, and category-level performance)
-## 🖼️ Dashboard Preview
+---
 
-![Coffee Shop Sales Dashboard](https://github.com/durgesh2003dsp/Coffee-sales-/blob/main/Coffee%20shop%20saels.PNG?raw=true)
+## 🔍 Project Workflow (Step-by-Step)
 
+### 1️⃣ Data Collection & Initial Exploration (Python)
 
+* Loaded raw CSV data using Pandas
+* Inspected dataset structure, data types, and dimensions
+* Identified missing values, duplicates, and inconsistencies
 
+**Outcome:** Clear understanding of data quality and structure
 
-## 🔍 Step-by-Step Analysis Approach
+---
 
-1️⃣ Data Overview & Understanding
+### 2️⃣ Data Cleaning & Preprocessing (Python)
 
-The dataset structure is examined using Pandas
+* Converted date and time columns into proper datetime format
+* Created derived features:
 
-Data types, column counts, and memory usage are reviewed
+  * Month, day, weekday
+  * Weekend vs weekday indicator
+* Cleaned category labels and ensured numeric accuracy
 
-Confirms data completeness and readiness for detailed sales analysis.
+**Outcome:** Clean, analysis-ready dataset
 
+---
 
-2️⃣ Revenue Analysis by Product Category
+### 3️⃣ Exploratory Data Analysis (EDA)
 
-Sales revenue is aggregated by product category
+* Analyzed overall sales, orders, and quantity sold
+* Studied sales distribution by:
 
-Identifies top-performing and low-performing categories
+  * Product category
+  * Product type
+  * Store location
+* Identified time-based trends (daily, weekly, monthly)
+* Compared weekday vs weekend performance
 
-Helps understand which products contribute most to overall revenue.
+**Outcome:** Key insights to guide dashboard design
 
+---
 
-3️⃣ Monthly Sales Trend Analysis
+### 4️⃣ SQL-Based Business Analysis
 
-Sales data is grouped and analyzed on a monthly basis
+* Wrote SQL queries to:
 
-Reveals seasonality patterns, growth trends, and potential declines
+  * Aggregate sales and orders by product and store
+  * Identify top-performing and low-performing products
+  * Detect peak sales days and periods
 
-Supports strategic planning and forecasting.
+**Outcome:** Strengthened analysis and validation of results
 
+---
 
-4️⃣ Day-Wise Sales Performance
+### 5️⃣ Advanced Excel Analysis
 
-Sales performance is analyzed across individual days
+* Built pivot tables for category-wise and store-wise sales
+* Calculated percentage contribution and comparisons
+* Supported quick ad-hoc business analysis
 
-Identifies high-performing and low-performing days
+**Outcome:** Business-friendly summaries for stakeholders
 
-Useful for optimizing staffing and inventory planning.
+---
 
+### 6️⃣ Power BI Data Modeling
 
-5️⃣ Hourly Sales Distribution
+* Imported cleaned data into Power BI
+* Built optimized data model and relationships
+* Created DAX measures:
 
-Sales are analyzed across different hours of the day
+  * Total Sales
+  * Total Orders
+  * Total Quantity Sold
+  * Month-over-Month performance metrics
 
-Helps identify peak business hours and customer purchase timing
+**Outcome:** Scalable and efficient analytical model
 
-Supports operational decisions such as store opening hours and promotions.
+---
 
+### 7️⃣ Power BI Dashboard Development
 
-6️⃣ Category Performance Comparison Across Months
+The interactive dashboard provides:
+## 🖼️ Dashboard Preview  ![Coffee Shop Sales Dashboard](https://github.com/durgesh2003dsp/Coffee-sales-/blob/main/Coffee%20shop%20saels.PNG?raw=true)
 
-Product category performance is compared month-wise
+#### 📊 Key KPIs
 
-Highlights consistency or variability in category sales over time
+* Total Sales
+* Total Orders
+* Total Quantity Sold
+* Month-over-Month comparison
 
-Useful for long-term category-level strategy.
+#### 📈 Visual Insights
 
+* Daily sales trend analysis
+* Sales by product category and product type
+* Weekday vs weekend sales comparison
+* Store location performance
+* Product-level detailed table
 
-7️⃣ Outlier Detection & Data Validation
+#### 🎛 Interactivity
 
-Outlier analysis is performed to detect extreme or unusual sales values
+* Month slicer
+* Date-level filtering
+* Cross-visual interaction
 
-Helps ensure data quality and reliability
+**Outcome:** Executive-ready dashboard for decision-making
 
-Identifies exceptional transactions that may require further investigation.
+---
 
+## 💡 Key Insights
 
-8️⃣ Customer Behavior Metrics
+* Coffee category contributes the highest share of revenue
+* Weekday sales dominate overall revenue (~70%)
+* Certain product types consistently outperform others
+* Store locations show comparable performance with minor variation
+* Sales peak during mid-month and specific weekdays
 
-Customer-related sales patterns are analyzed
+---
 
-Focuses on understanding purchasing behavior and trends
+## 🚀 Business Recommendations
 
-Helps in identifying customer demand patterns.
+* Focus promotions on top-performing product types
+* Introduce weekend-specific offers to boost weekend sales
+* Optimize inventory for high-demand coffee products
+* Replicate successful strategies across store locations
 
+---
 
-9️⃣ Percentage Contribution by Product Category
+## 📌 Project Outcome
 
-Calculates the percentage contribution of each product category to total sales
+This project successfully converts raw transactional data into **clear insights and strategic recommendations**. It reflects real-world responsibilities of a Data Analyst and demonstrates strong analytical, technical, and visualization skills.
 
-Identifies key revenue-driving categories
+---
 
-Supports prioritization of high-impact products.
+## 🧾 Resume-Ready Summary
 
+**Developed an end-to-end Coffee Shop Sales Analytics solution using Python, SQL, Excel, and Power BI to analyze 149K+ transactions, identify sales trends, and deliver actionable insights through interactive dashboards.**
 
-## 📈 Key Insights
+---
 
-The dataset contains 149K+ transactions, enabling reliable and robust analysis
+## 📂 Repository Structure (Suggested)
 
-Sales patterns vary significantly by:
+```
+├── data/
+│   └── coffee_sales.csv
+├── notebooks/
+│   └── Coffee_sales.ipynb
+├── powerbi/
+│   └── Coffee_shop_sales.pbix
+├── README.md
+```
 
-Product category
+---
 
-Month
-
-Day
-
-Hour
-
-Certain product categories contribute a significantly higher percentage of total sales
-
-Time-based analysis clearly highlights peak and non-peak sales periods
-
-Outlier detection increases confidence in the accuracy of analytical results.
-
-## 🛠️ Tools & Technologies Used
-
-Python (Pandas, NumPy, Matplotlib) – Data cleaning & analysis
-
-Power BI – Interactive dashboard & visualization
-
-Excel – Initial data validation
-
-## 📌 Business Impact
-
-Enables data-driven decision-making
-
-Improves understanding of customer purchasing behavior
-
-Helps optimize product strategy, inventory, and operations
-
+⭐ *If you find this project useful, feel free to star the repository!*
