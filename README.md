@@ -147,8 +147,6 @@ Outlier detection increases confidence in the accuracy of analytical results.
 
 Python (Pandas, NumPy, Matplotlib) – Data cleaning & analysis
 
-SQL – Data extraction & aggregation
-
 Power BI – Interactive dashboard & visualization
 
 Excel – Initial data validation
