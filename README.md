@@ -1,91 +1,118 @@
 # Coffee-sales
 This repository contains an exploratory data analysis (EDA) project focused on coffee shop sales data. The objective of the project is to analyze sales performance, understand customer purchasing patterns, and extract meaningful business insights using Python data analysis libraries.
+🎯 Project Objectives
 
-## Problem Statement-
+The analysis aims to understand:
 
-The coffee shop has sales transaction data, but there is no clear understanding of sales performance, trends, and patterns.
-The problem is to analyze the sales data to understand:
-
-Overall sales behavior
+Overall sales behavior and performance
 
 Product-wise and time-based sales patterns
 
-Key trends that can support better business decisions
+Key trends that can help improve decision-making related to products, timing, and operations
 
-Dataset Overview (From File)
+📂 Dataset Overview
 
-The dataset contains 149,116 records
+Total Records: 149,116 transactions
 
-Multiple data types are present, including:
+Data Type: Large-scale transactional sales data
 
-Numeric variables (sales, quantity, revenue-related fields)
+Variables Included:
 
-Categorical variables (product category, date/time attributes)
+Numeric Variables: Sales amount, quantity sold, revenue-related fields
 
-Dataset size indicates large-scale transactional sales data
+Categorical Variables: Product category, product type, date & time attributes
 
-🔍 Step-by-Step Analysis Description (As Per Notebook)
-1️⃣ Data Overview
+The dataset size is sufficient to perform reliable and meaningful trend analysis
 
-Dataset structure is examined using Pandas
+🖼️ Dashboard Preview
+
+Coffee Shop Sales Dashboard
+(Power BI visualization showcasing KPIs, trends, and category-level performance)
+## 🖼️ Dashboard Preview
+
+![Coffee Shop Sales Dashboard](https://github.com/durgesh2003dsp/Coffee-sales-/blob/main/Coffee%20shop%20saels.PNG?raw=true)
+
+
+
+
+🔍 Step-by-Step Analysis Approach
+1️⃣ Data Overview & Understanding
+
+The dataset structure is examined using Pandas
 
 Data types, column counts, and memory usage are reviewed
 
-Confirms the dataset is suitable for detailed sales analysis
+Confirms data completeness and readiness for detailed sales analysis
 
-2️⃣ Revenue by Product Category
+2️⃣ Revenue Analysis by Product Category
 
-Sales revenue is analyzed across different product categories
+Sales revenue is aggregated by product category
 
-Helps identify which product categories contribute more to overall sales
+Identifies top-performing and low-performing categories
 
-3️⃣ Monthly Sales Trend
+Helps understand which products contribute most to overall revenue
 
-Sales data is grouped by month
+3️⃣ Monthly Sales Trend Analysis
 
-Monthly trends help understand seasonality and sales growth or decline over time
+Sales data is grouped and analyzed on a monthly basis
 
-4️⃣ Day-Wise Sales Analysis
+Reveals seasonality patterns, growth trends, and potential declines
 
-Sales performance is analyzed by day
+Supports strategic planning and forecasting
 
-Useful for identifying high-performing and low-performing days
+4️⃣ Day-Wise Sales Performance
 
-5️⃣ Hourly Sales Analysis
+Sales performance is analyzed across individual days
 
-Sales distribution is analyzed across different hours of the day
+Identifies high-performing and low-performing days
 
-Helps understand peak business hours and customer purchase timing
+Useful for optimizing staffing and inventory planning
+
+5️⃣ Hourly Sales Distribution
+
+Sales are analyzed across different hours of the day
+
+Helps identify peak business hours and customer purchase timing
+
+Supports operational decisions such as store opening hours and promotions
 
 6️⃣ Category Performance Comparison Across Months
 
-Product categories are compared month-wise
+Product category performance is compared month-wise
 
-Identifies category-level performance consistency or variation over time
+Highlights consistency or variability in category sales over time
 
-7️⃣ Outlier Detection
+Useful for long-term category-level strategy
 
-Outlier analysis is performed to detect unusual or extreme sales values
+7️⃣ Outlier Detection & Data Validation
 
-Helps ensure data quality and identify exceptional transactions
+Outlier analysis is performed to detect extreme or unusual sales values
+
+Helps ensure data quality and reliability
+
+Identifies exceptional transactions that may require further investigation
 
 8️⃣ Customer Behavior Metrics
 
 Customer-related sales patterns are analyzed
 
-Focuses on understanding purchasing behavior trends
+Focuses on understanding purchasing behavior and trends
+
+Helps in identifying customer demand patterns
 
 9️⃣ Percentage Contribution by Product Category
 
 Calculates the percentage contribution of each product category to total sales
 
-Helps determine key revenue-driving categories
+Identifies key revenue-driving categories
 
-📈 Key Insights (Based Only on File Content)
+Supports prioritization of high-impact products
 
-The dataset is large (149K+ transactions), enabling reliable trend analysis
+📈 Key Insights
 
-Sales patterns vary by:
+The dataset contains 149K+ transactions, enabling reliable and robust analysis
+
+Sales patterns vary significantly by:
 
 Product category
 
@@ -95,8 +122,27 @@ Day
 
 Hour
 
-Certain product categories contribute a higher percentage of total sales
+Certain product categories contribute a significantly higher percentage of total sales
 
-Time-based analysis reveals clear peak and non-peak sales periods
+Time-based analysis clearly highlights peak and non-peak sales periods
 
-Outlier detection improves confidence in analytical results
+Outlier detection increases confidence in the accuracy of analytical results
+
+🛠️ Tools & Technologies Used
+
+Python (Pandas, NumPy, Matplotlib) – Data cleaning & analysis
+
+SQL – Data extraction & aggregation
+
+Power BI – Interactive dashboard & visualization
+
+Excel – Initial data validation
+
+📌 Business Impact
+
+Enables data-driven decision-making
+
+Improves understanding of customer purchasing behavior
+
+Helps optimize product strategy, inventory, and operations
+
