@@ -1,35 +1,34 @@
 # Coffee-sales
 This repository contains an exploratory data analysis (EDA) project focused on coffee shop sales data. The objective of the project is to analyze sales performance, understand customer purchasing patterns, and extract meaningful business insights using Python data analysis libraries.
 
+
 ## Problem Statement
 
 The coffee shop has a large volume of sales transaction data, but there is no clear visibility into sales performance, trends, and patterns.
 The objective of this analysis is to transform raw transactional data into actionable insights that support better business and operational decisions.
 
 
-🎯 Project Objectives
+## 🎯 Project Objectives
 
-The analysis aims to understand:
+      The analysis aims to understand: Overall sales behavior and performance
 
-Overall sales behavior and performance
+      Product-wise and time-based sales patterns
 
-Product-wise and time-based sales patterns
+     Key trends that can help improve decision-making related to products, timing, and operations
 
-Key trends that can help improve decision-making related to products, timing, and operations
+## 📂 Dataset Overview
 
-📂 Dataset Overview
+     Total Records: 149,116 transactions
 
-Total Records: 149,116 transactions
+     Data Type: Large-scale transactional sales data
 
-Data Type: Large-scale transactional sales data
+     Variables Included:
 
-Variables Included:
+     Numeric Variables: Sales amount, quantity sold, revenue-related fields
 
-Numeric Variables: Sales amount, quantity sold, revenue-related fields
+    Categorical Variables: Product category, product type, date & time attributes
 
-Categorical Variables: Product category, product type, date & time attributes
-
-The dataset size is sufficient to perform reliable and meaningful trend analysis
+    The dataset size is sufficient to perform reliable and meaningful trend analysis
 
 🖼️ Dashboard Preview
 
