@@ -125,7 +125,8 @@ The dataset is well-suited for time-series analysis, aggregation, and business i
 ### 7️⃣ Power BI Dashboard Development
 
 The interactive dashboard provides:
-## 🖼️ Dashboard Preview  ![Coffee Shop Sales Dashboard](https://github.com/durgesh2003dsp/Coffee-sales-/blob/main/Coffee%20shop%20saels.PNG?raw=true)
+## 🖼️ Dashboard Preview  ![Coffee Shop Sales Dashboard](https://raw.githubusercontent.com/durgesh2003dsp/Coffee-sales-/main/coffee%20shop.PNG)
+
 
 #### 📊 Key KPIs
 
